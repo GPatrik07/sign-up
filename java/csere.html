@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Csereprogram</title>
+</head>
+<body>
+    <h1>Csereprogram v1.0</h1>
+<img id="cser" src="img/kor.png" width="200px" onclick="csere()">
+<input type="text" id="kiir" style="text-align: center;" readonly placeholder="klikk"  >
+
+<script>
+let kep = 1;
+let click = 0;
+function csere() {
+    click = click + 1 ;
+    kiir.value = click ;
+if (kep ==1) { 
+document.getElementById('cser').src = "img/haromszog.png" ; 
+kep = 2;
+}
+
+else {
+document.getElementById('csere').src = "img/kor.png" ;
+kep = 1;
+}
+}
+</script>
+</body>
+</html>
